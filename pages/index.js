@@ -22,7 +22,7 @@ export default function Home() {
   const handlesubmit = async(e)=>{
     e.preventDefault()
     const formdata = { email, password,name };
-    let res = await fetch('http://localhost:3000/api/register', {
+    let res = await fetch('/api/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
